@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>BuhOne</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="" class="header__logo-link">
+            <svg class="header__logo-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-logo"></use>
+            </svg>
+          <span class="header__logo-text">BuhOne</span>
+        </a>
+        </div>
+        <nav class="header__nav">
+          <div class="header__nav-top">
+            <ul class="header__info">
+              <li class="header__info-item">
+                <svg class="header__info-icon">
+                  <use xlink:href="images/icon"></use>
+                </svg>
+                <a class="header__info-phone" href="tel:+71112223344">
+                  <span class="header__info-phone-text">8(111) 222-33-44</span>
+                </a>
+              </li>
+              <li class="header__info-item">
+                <div class="header__info-elements">
+                  <svg class="header__info-icon">
+                    <use xlink:href="images/sprite.svg#icon-time"></use>
+                  </svg>
+                  <span class="header__info-text">Пн-Пт 10:00-18:00</span>
+                </div>
+              </li>
+              <li class="header__info-item">
+                <div class="header__info-elements">
+                  <svg class="header__info-icon">
+                    <use xlink:href="images/sprite.svg#icon-letter"></use>
+                  </svg>
+                  <span class="header__info-text">order@buhone.ru</span>
+                </div>
+              </li>
+              <li class="header__info-item">
+                <div class="header__info-elements">
+                  <svg class="header__info-icon">
+                    <use xlink:href="images/sprite.svg#icon-geo"></use>
+                  </svg>
+                  <span class="header__info-text">Невский пр. 130</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <ul class="header__nav-list">
+            <li class="header__nav-list-item">
+              <a class="header__nav-link" href="#">Главная</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a class="header__nav-link" href="#">Услуги</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a class="header__nav-link" href="#">Кейсы</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a class="header__nav-link" href="#">О компании</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a class="header__nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__content-title">Бухгалтерские услуги в Санкт-Петербурге</h1>
+          <a class="hero__content-link btn" href="#">Наша презентация</a>
+        </div>
+        <div class="hero__slider">
+          <div class="hero__slider-pagination">
+            <button class="hero__slider-dot" type="button"></button>
+            <button class="hero__slider-dot" type="button"></button>
+            <button class="hero__slider-dot hero__slider-dot--active" type="button"></button>
+            <button class="hero__slider-dot" type="button"></button>
+          </div>
+          <div class="hero__slider-buttons">
+            <button class="hero__slider-buttons-prev" type="button">
+              <svg class="hero__slider-buttons-icon">
+                <use xlink:href="images/sprite.svg#icon-prev"></use>
+              </svg>
+            </button>
+            <button class="hero__slider-buttons-next" type="button">
+              <svg class="hero__slider-buttons-icon">
+                <use xlink:href="images/sprite.svg#icon-next"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <div class="container">
+        <div class="contacts__inner">
+          <div class="contacts__wrapper">
+            <div class="contacts__content">
+              <h2 class="contacts__title">Связь с нами</h2>
+              <p class="contacts__text">У вас остались вопросы? Напишите нам - мы ответим в ближайшее время</p>
+            </div>
+            <div class="contacts__info">
+              <div class="contacts__items">
+                <svg class="contacts__items-icon">
+                  <use xlink:href=""></use>
+                </svg>
+                <a class="contacts__items-text contacts__items-phone" href="tel:+71112223344">+7 (111) 222-33-44</a>
+              </div>
+              <div class="contacts__items">
+                <svg class="contacts__items-icon">
+                  <use xlink:href="images/sprite.svg#icon-letter"></use>
+                </svg>
+                <span class="contacts__items-text contacts__items-email">order@bu-one.ru</span>
+              </div>
+            </div>
+          </div>
+          <form class="form" action="#">
+            <div class="form__inner">
+              <div class="custom-input">
+                <label  class="custom-input__label" for="name">
+                  Имя
+                </label>
+                <input class="custom-input__field" type="text" id="name" name="Name" aria-label="Имя" placeholder="Иван" required>
+              </div>
+              <div class="custom-input">
+                <label class="custom-input__label" for="surname">
+                  Фамилия
+                </label>
+                <input class="custom-input__field" type="text" id="surname" name="Surname" aria-label="Фамилия" placeholder="Иванов" required>
+              </div>
+            </div>
+            <div class="custom-input">
+              <label class="custom-input__label" for="surname">Сообщение</label>
+              <textarea class="custom-input__field custom-input__field-area" id="message" name="Message"  aria-label="Окно для сообщения" placeholder="Ваше сообщение" required></textarea>
+            </div>
+            <button class="form__btn btn" type="submit">Отправить сообщение</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__info">
+        <span class="footer__info-text footer__info-copyright">2019 (с) Все права защищены. БухОне.ру</span>
+        <span class="footer__info-text footer__info-developedby">Разработано: BuhOne</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+.hero {
+  background-image: url('/images/backgroundjpg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 0 113px;
+  margin: 0 0 2px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 53%;
+    padding: 170px 0 0;
+    letter-spacing: 0.02em;
+
+    &-title {
+      font-family: $ff-mer;
+      font-size: 48px;
+      line-height: 138%;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin: 0 0 30px;
+    }
+
+    &-link {
+      margin: 0 0 70px;
+      max-width: 270px;
+    }
+  }
+
+
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &-pagination {
+      display: flex;
+      gap: 38px;
+    }
+
+    &-dot {
+      display: flex;
+      border: none;
+      outline: none;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+
+      &--active {
+        background-color: rgba(255, 255, 255, 1);
+      }
+    }
+
+    &-buttons {
+      display: flex;
+
+      &-prev,
+      &-next {
+        width: 60px;
+        height: 60px;
+        border: none;
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+      }
+
+      &-icon {
+        width: 15px;
+        height: 15px;
+      }
+
+      &-next {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+
+  }
+
+  
+}
