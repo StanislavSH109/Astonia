@@ -1,99 +1,94 @@
 .header {
   padding: 20px 0 30px;
-
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__logo {
-    display: flex;
-    justify-self: center;
-    padding: 10px 0 0;
-    
-    &-link {
+  .nav {
+    &__wrapper {
       display: flex;
-      gap: 30px;
-      &:focus {
-        outline: none;
+      justify-content: space-between;
+    }
+
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    &__list {
+      &-top {
+        display: flex;
+        gap: 44px;
       }
     }
-
-    &-text {
-      font-family: $ff-mer;
-      font-size: 36px;
-      font-weight: 900;
-      line-height: 138%;
-      color: #005FA3;
-    }
-    &-icon {
-      width: 40px;
-      height: 40px;
-    }
-  }
-
-  &__nav {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    &-top {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    &-list {
-      display: flex;
-      gap: 77px;
-    }
-
-    &-link {
-      font-family: $ff-lato;
-      font-size: 14px;
-      font-weight: 700;
-      color: #000000;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      transition: color $transition-200;
-
-      &:hover{
-        color: #9c8d8d;
+  
+    &__logo {
+      &-link {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 0 0;
+        &:focus {
+          outline: none;
+        }
       }
-
-      &:focus {
-        outline: none;
-        color: #9c8d8d;
+      &-text {
+        font-family: $ff-mer;
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 138%;
+        color: #005FA3;
       }
     }
-  }
-
-  &__info {
-    display: flex;
-    gap: 40px;
-
-    &-elements {
-      display: flex;
-      align-items: center;
-      gap: 15px;
+  
+    &__info {
+      &-item {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+  
+      &-elements {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      &-icon {
+        width: 23px;
+        height: 17px;
+        color:#005FA3;
+      }
+      &-text {
+        font-family: $ff-lato;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 132%;
+      }
     }
-    &-icon {
-      width: 23px;
-      height: 17px;
-      color:#005FA3;
+  
+    &__list {
+      &-bottom {
+        display: flex;
+        justify-content: space-between;
+      }
+  
+      &-link {
+        font-family: $ff-lato;
+        font-size: 14px;
+        font-weight: 700;
+        color: #000000;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        transition: color $transition-200;
+        letter-spacing: 0.1em;
+        &:hover{
+          color: #9c8d8d;
+        }
+        &:focus {
+          outline: none;
+          color: #9c8d8d;
+        }
+      }
     }
-
-    &-text {
-      font-family: $ff-lato;
-      font-size: 13px;
-      font-weight: 300;
-      line-height: 132%;
-    }
-
-    &-phone {
-      font-family: $ff-lato;
-      font-size: 13px;
-      font-weight: 300;
-      color: #000000;
-    }
+  
+  
   }
 }
+
